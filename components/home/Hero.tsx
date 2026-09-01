@@ -1,23 +1,24 @@
-import { SunHorizon } from "@phosphor-icons/react/dist/ssr";
+import Image from "next/image";
 import { Button } from "../ui/Button";
 import { Container } from "../ui/Container";
-import { PlaceholderVisual } from "../ui/PlaceholderVisual";
 import { site } from "@/lib/site";
 
 export function Hero() {
   return (
     <section className="relative flex min-h-[100dvh] items-center overflow-hidden bg-navy-deep">
-      {/* TODO: replace with real photography: solar-roofed school + electric bus, Lagos */}
-      <PlaceholderVisual
-        tone="deep"
-        icon={<SunHorizon weight="thin" className="size-[38rem]" />}
-        className="absolute inset-0"
+      <Image
+        src="/hero.jpeg"
+        alt="A solar technician installing rooftop photovoltaic panels"
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover"
       />
-      <div className="absolute inset-0 bg-navy/55" />
-      <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/25 to-transparent" />
+      <div className="absolute inset-0 bg-navy/70" />
+      <div className="absolute inset-0 bg-gradient-to-t from-navy-deep via-navy-deep/30 to-navy-deep/10" />
 
       <Container className="relative pt-24 pb-16">
-        <p className="text-sm font-medium tracking-wide text-teal-400">
+        <p className="text-sm font-medium tracking-wide text-white/80">
           {site.legalForm} · France, Nigeria, and beyond
         </p>
         <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance md:text-6xl">

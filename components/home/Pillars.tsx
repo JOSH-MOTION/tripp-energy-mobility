@@ -1,7 +1,7 @@
+import Image from "next/image";
 import { SunHorizon, Bus, Lightning } from "@phosphor-icons/react/dist/ssr";
 import { Container } from "../ui/Container";
 import { Reveal } from "../ui/Reveal";
-import { PlaceholderVisual } from "../ui/PlaceholderVisual";
 
 export function Pillars() {
   return (
@@ -19,12 +19,15 @@ export function Pillars() {
 
         <div className="mt-10 grid grid-cols-1 gap-5 lg:grid-cols-2">
           <Reveal className="group relative overflow-hidden rounded-3xl lg:col-span-2">
-            {/* TODO: replace with real photography: bright classroom, solar-powered lighting */}
-            <PlaceholderVisual
-              tone="navy"
-              icon={<SunHorizon weight="thin" className="size-72 transition-transform duration-700 group-hover:scale-110" />}
-              className="aspect-[16/8] w-full"
-            />
+            <div className="relative aspect-[16/8] w-full">
+              <Image
+                src="/pillar-classroom.jpg"
+                alt="African students in a classroom lit and powered by a rooftop solar panel"
+                fill
+                sizes="(min-width: 1024px) 1200px, 100vw"
+                className="object-cover object-top transition-transform duration-700 group-hover:scale-105"
+              />
+            </div>
             <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-navy-deep/90 via-navy-deep/40 to-transparent p-8 pt-24 md:p-10 md:pt-28">
               <SunHorizon weight="fill" className="size-9 text-teal-400" />
               <h3 className="mt-4 text-xl font-semibold text-white md:text-2xl">
