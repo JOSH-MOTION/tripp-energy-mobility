@@ -14,7 +14,7 @@ export function PageHero({
     <section className="relative overflow-hidden bg-navy pt-32 pb-20 text-white lg:pt-36 lg:pb-24">
       <div
         aria-hidden
-        className="pointer-events-none absolute inset-0 opacity-[0.07]"
+        className="bg-dot-drift pointer-events-none absolute -inset-8 opacity-[0.07]"
         style={{
           backgroundImage:
             "radial-gradient(circle at 1px 1px, white 1px, transparent 0)",

@@ -1,7 +1,20 @@
+"use client";
+
+import { useRef } from "react";
+import { motion, useScroll, useTransform, useReducedMotion } from "motion/react";
 import { clsx } from "clsx";
+import { Reveal } from "../ui/Reveal";
 import { publications } from "@/lib/data/research";
 
 export function ResearchTimeline() {
+  const trackRef = useRef<HTMLDivElement>(null);
+  const reduce = useReducedMotion();
+  const { scrollYProgress } = useScroll({
+    target: trackRef,
+    offset: ["start 0.75", "end 0.6"],
+  });
+  const lineScale = useTransform(scrollYProgress, [0, 1], [0, 1]);
+
   return (
     <>
       {/* Mobile: horizontal scroll-snap */}
@@ -18,9 +31,14 @@ export function ResearchTimeline() {
 
       {/* Desktop: vertical timeline */}
       <div className="hidden lg:block">
-        <div className="relative space-y-8 border-l border-navy/15 pl-10">
-          {publications.map((pub) => (
-            <div key={pub.number} className="relative">
+        <div ref={trackRef} className="relative space-y-8 pl-10">
+          <div className="absolute inset-y-0 left-0 w-px bg-navy/10" />
+          <motion.div
+            style={{ scaleY: reduce ? 1 : lineScale }}
+            className="absolute inset-y-0 left-0 w-px origin-top bg-gradient-to-b from-teal via-teal to-gold"
+          />
+          {publications.map((pub, i) => (
+            <Reveal key={pub.number} delay={i * 0.03} className="relative">
               <span
                 className={clsx(
                   "absolute -left-[3.05rem] top-1 flex size-6 items-center justify-center rounded-full text-xs font-bold",
@@ -30,7 +48,7 @@ export function ResearchTimeline() {
                 {pub.number}
               </span>
               <PubBadge pub={pub} />
-            </div>
+            </Reveal>
           ))}
         </div>
       </div>

@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "motion/react";
 import { clsx } from "clsx";
 import { ArrowRight } from "@phosphor-icons/react/dist/ssr";
 
@@ -10,6 +13,8 @@ const variantClasses: Record<Variant, string> = {
   inverse: "bg-white text-navy hover:bg-surface border border-white",
   "inverse-outline": "bg-navy/30 text-white border border-white hover:bg-white hover:text-navy backdrop-blur-sm",
 };
+
+const MotionLink = motion.create(Link);
 
 export function Button({
   href,
@@ -24,12 +29,18 @@ export function Button({
   variant?: Variant;
   className?: string;
   showArrow?: boolean;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+} & Omit<
+  React.AnchorHTMLAttributes<HTMLAnchorElement>,
+  "onAnimationStart" | "onAnimationEnd" | "onDrag" | "onDragStart" | "onDragEnd"
+>) {
   return (
-    <Link
+    <MotionLink
       href={href}
+      whileHover={{ y: -2 }}
+      whileTap={{ scale: 0.97, y: 0 }}
+      transition={{ type: "spring", stiffness: 400, damping: 22 }}
       className={clsx(
-        "group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-6 py-3 text-sm font-semibold tracking-wide transition-all duration-300 active:scale-[0.98]",
+        "group inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-full px-6 py-3 text-sm font-semibold tracking-wide shadow-sm transition-colors duration-300 hover:shadow-md",
         variantClasses[variant],
         className
       )}
@@ -39,9 +50,9 @@ export function Button({
       {showArrow && (
         <ArrowRight
           weight="bold"
-          className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-0.5"
+          className="size-4 shrink-0 transition-transform duration-300 group-hover:translate-x-1"
         />
       )}
-    </Link>
+    </MotionLink>
   );
 }

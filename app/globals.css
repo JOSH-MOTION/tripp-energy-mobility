@@ -111,3 +111,17 @@ html {
 .prose-body p {
   margin-bottom: 1.15em;
 }
+
+@keyframes dot-drift {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-28px, -28px, 0);
+  }
+}
+
+.bg-dot-drift {
+  animation: dot-drift 16s linear infinite;
+  will-change: transform;
+}
