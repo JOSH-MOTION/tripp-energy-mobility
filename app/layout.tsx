@@ -43,12 +43,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     name: site.name,
     url: `https://${site.domain}`,
     description:
-      "Tripp Energy and Mobility is a Société à Mission transforming schools across Sub-Saharan Africa and South Asia into solar-powered community energy and mobility hubs.",
+      "Tripp Energy and Mobility is a social enterprise transforming schools across Sub-Saharan Africa and South Asia into solar-powered community energy and mobility hubs.",
     address: site.offices.map((o) => ({
       "@type": "PostalAddress",
       streetAddress: o.address,
     })),
-    email: "contact@trippenergy.com",
+    email: "info@trippenergy.com",
   };
 
   return (

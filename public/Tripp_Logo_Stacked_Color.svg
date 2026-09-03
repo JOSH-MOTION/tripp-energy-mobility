@@ -1,0 +1,21 @@
+<svg viewBox="0 0 400 340" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon, centered top -->
+  <g transform="translate(100,10)">
+    <g>
+        <line x1="58.7" y1="85.0" x2="46.4" y2="80.5" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="74.8" y1="64.0" x2="67.3" y2="53.3" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="100.0" y1="56.0" x2="100.0" y2="43.0" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="125.2" y1="64.0" x2="132.7" y2="53.3" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+      <line x1="141.3" y1="85.0" x2="153.6" y2="80.5" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+      </g>
+    <path d="M 56 122 A 44 44 0 0 1 144 122" fill="none" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 18 122 L 144 122 C 162 122 168 108 178 88 S 186 66 190 58" fill="none" stroke="#0B6E4F" stroke-width="9" stroke-linecap="round"/>
+    <path d="M 18 122 L 144 122 C 162 122 168 108 178 88 S 186 66 190 58" fill="none" stroke="#F2A93B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="10 9"/>
+  </g>
+
+  <!-- Wordmark, centered below -->
+  <g text-anchor="middle">
+    <text x="200" y="260" font-family="Helvetica, Arial, sans-serif" font-size="54" font-weight="700" fill="#1B2A4A">Tripp</text>
+    <text x="200" y="298" font-family="Helvetica, Arial, sans-serif" font-size="23" font-weight="500" letter-spacing="1" fill="#0B6E4F">Energy and Mobility</text>
+  </g>
+</svg>

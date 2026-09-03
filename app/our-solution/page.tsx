@@ -5,7 +5,7 @@ import { PageHero } from "@/components/ui/PageHero";
 import { Reveal } from "@/components/ui/Reveal";
 import { Button } from "@/components/ui/Button";
 import { SEMSDiagram } from "@/components/solution/SEMSDiagram";
-import { DistributionModel } from "@/components/solution/DistributionModel";
+// import { DistributionModel } from "@/components/solution/DistributionModel";
 
 export const metadata: Metadata = {
   title: "SPARC+CM Programme | Solar-Retrofit Nexus | Our Solution",
@@ -49,7 +49,7 @@ export default function SolutionPage() {
     <>
       <PageHero
         title="The Solar-Retrofit Nexus: A New Model for School Energy and Mobility."
-        intro="SPARC+CM integrates three things no programme has ever combined at a school site: solar primary electricity, solar-charged electric school buses, and solar-powered public EV charging, in a single installation, generating four independent revenue streams from Day 1."
+        intro="SPARC+CM integrates three things no programme has ever combined at a school site: solar primary electricity, solar-charged electric school buses, and solar-powered public EV charging, in a single installation."
       />
 
       <section className="py-24">
@@ -69,7 +69,7 @@ export default function SolutionPage() {
         </Container>
       </section>
 
-      <section className="bg-surface py-24">
+      {/* <section className="bg-surface py-24">
         <Container className="max-w-3xl">
           <Reveal>
             <h2 className="text-2xl font-semibold text-navy">
@@ -84,11 +84,11 @@ export default function SolutionPage() {
             <DistributionModel />
           </div>
         </Container>
-      </section>
+      </section> */}
 
       <section className="py-24">
         <Container>
-          <Reveal>
+          {/* <Reveal>
             <h2 className="text-2xl font-semibold text-navy">Four Revenue Streams</h2>
           </Reveal>
           <div className="mt-8 grid grid-cols-1 gap-5 sm:grid-cols-2">
@@ -113,7 +113,7 @@ export default function SolutionPage() {
                 </Reveal>
               );
             })}
-          </div>
+          </div> */}
 
           <Reveal className="mt-12 flex justify-center">
             <Button href="/projects" variant="primary">

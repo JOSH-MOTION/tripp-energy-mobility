@@ -6,9 +6,9 @@ import { Reveal } from "@/components/ui/Reveal";
 import { PlaceholderVisual } from "@/components/ui/PlaceholderVisual";
 
 export const metadata: Metadata = {
-  title: "About Us | Société à Mission | Clean Energy Schools Africa",
+  title: "About Us | Clean Energy Schools",
   description:
-    "Tripp Energy and Mobility is a French Société à Mission transforming schools into solar energy and mobility hubs across Africa and South Asia. Anchored by Rennes School of Business.",
+    "Tripp Energy and Mobility is a social enterprise transforming schools into solar energy and mobility hubs across Africa and South Asia. Anchored by Rennes School of Business.",
 };
 
 const commitments = [
@@ -24,7 +24,7 @@ export default function AboutPage() {
     <>
       <PageHero
         title="Energy Is the Foundation. Mobility Is the Application. Schools Are the Infrastructure."
-        intro="Who Tripp Energy and Mobility is, what drives the mission, and what the Société à Mission legal form means for every stakeholder we work with."
+        // intro="Who Tripp Energy and Mobility is, what drives the mission, and what the Société à Mission legal form means for every stakeholder we work with."
       />
 
       <section className="py-24">
@@ -32,16 +32,14 @@ export default function AboutPage() {
           <Reveal>
             <h2 className="text-2xl font-semibold text-navy">Who We Are</h2>
             <p className="mt-4 leading-relaxed text-ink/75">
-              Tripp Energy and Mobility is a Société à Mission, France&apos;s
-              purpose-driven company legal form, equivalent to a Benefit Corporation,
-              registered in France and operating across Sub-Saharan Africa and South
+              Tripp Energy and Mobility is a social enterprise, registered in France and operating across Sub-Saharan Africa and South
               Asia through the SPARC+CM programme. We are simultaneously a social
               enterprise and a commercially structured company: our mission is binding,
               our financial model is self-sustaining, and our impact is independently
               verified.
             </p>
             <p className="mt-4 leading-relaxed text-ink/75">
-              Our Nigerian operational entity, Tripp Energy and Mobility Nigeria
+              Our operational entity, Tripp Energy and Mobility Nigeria
               Limited, is registered under the Companies and Allied Matters Act (CAMA)
               2020 and serves as the primary implementation vehicle for the LASMOCEP /
               SPARC+CM programme in Nigeria.
@@ -70,7 +68,7 @@ export default function AboutPage() {
         <Container className="max-w-3xl">
           <Reveal>
             <h2 className="text-2xl font-semibold text-navy">
-              The Société à Mission: What It Means
+              The Social Enterprise: What It Means
             </h2>
             <p className="mt-4 leading-relaxed text-ink/75">
               Tripp Energy and Mobility is incorporated as a Société à Mission under

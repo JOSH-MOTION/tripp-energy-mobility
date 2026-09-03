@@ -1,0 +1,19 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Rays / spokes: dual reading as sun rays or wheel spokes -->
+  <g>
+    <line x1="58.7" y1="85.0" x2="46.4" y2="80.5" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+    <line x1="74.8" y1="64.0" x2="67.3" y2="53.3" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+    <line x1="100.0" y1="56.0" x2="100.0" y2="43.0" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+    <line x1="125.2" y1="64.0" x2="132.7" y2="53.3" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+    <line x1="141.3" y1="85.0" x2="153.6" y2="80.5" stroke="#F2A93B" stroke-width="6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Sun disc: upper arc only, sitting on the horizon/road -->
+  <path d="M 56 122 A 44 44 0 0 1 144 122" fill="none" stroke="#F2A93B" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Road / horizon: flat beneath the sun, rising once clear of it -->
+  <path d="M 18 122 L 144 122 C 162 122 168 108 178 88 S 186 66 190 58" fill="none" stroke="#0B6E4F" stroke-width="9" stroke-linecap="round"/>
+
+  <!-- Lane marking: dashed centerline reading the road literally -->
+  <path d="M 18 122 L 144 122 C 162 122 168 108 178 88 S 186 66 190 58" fill="none" stroke="#F2A93B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="10 9"/>
+</svg>

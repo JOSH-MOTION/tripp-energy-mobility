@@ -4,9 +4,9 @@ export const enquiryEmailRouting: Record<string, string> = {
   "Technology / Supply": "partners@trippenergy.com",
   "Academic Partnership": "research@trippenergy.com",
   "Media / Press": "media@trippenergy.com",
-  General: "contact@trippenergy.com",
+  Enquiries: "info@trippenergy.com",
 };
 
 export function routeForEnquiry(enquiryType: string): string {
-  return enquiryEmailRouting[enquiryType] ?? "contact@trippenergy.com";
+  return enquiryEmailRouting[enquiryType] ?? "info@trippenergy.com";
 }

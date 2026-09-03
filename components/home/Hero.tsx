@@ -47,7 +47,7 @@ export function Hero() {
           transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
           className="text-sm font-medium tracking-wide text-white/80"
         >
-          {site.legalForm} · France, Nigeria, and beyond
+       
         </motion.p>
 
         <h1 className="mt-4 max-w-3xl text-4xl font-bold leading-[1.08] tracking-tight text-white text-balance md:text-6xl">
