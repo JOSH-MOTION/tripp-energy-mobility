@@ -100,7 +100,7 @@ function FormFields() {
             name="name"
             type="text"
             className={inputClass(!!errors.name)}
-            placeholder="Ada Obi"
+            placeholder="Dupont Sainsbury"
           />
         </Field>
         <Field label="Organisation" htmlFor="organisation" error={errors.organisation}>
@@ -180,8 +180,8 @@ function FormFields() {
       {submitError && (
         <p className="text-sm font-medium text-lsecnp">
           {submitError} You can also email{" "}
-          <a href="mailto:contact@trippenergy.com" className="underline underline-offset-2">
-            contact@trippenergy.com
+          <a href="mailto:info@trippenergy.com" className="underline underline-offset-2">
+            info@trippenergy.com
           </a>{" "}
           directly.
         </p>

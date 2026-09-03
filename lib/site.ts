@@ -2,15 +2,15 @@ export const site = {
   name: "Tripp Energy and Mobility",
   shortName: "Tripp Energy",
   domain: "trippenergy.com",
-  tagline: "Powering Schools. Transforming Mobility. Building a Cleaner Africa.",
+  tagline: "Powering Schools. Transforming Mobility. Building a Cleaner World.",
   legalForm: "social enterprise",
-  whatsapp: "https://wa.me/2340000000000",
+  whatsapp: "https://wa.me/+33746496183",
   offices: [
     {
       country: "France",
       entity: "Tripp Energy and Mobility",
       address: "2 Rue Robert d'Arbrissel, 35065 Rennes, France",
-      email: "contact@trippenergy.com",
+      email: "info@trippenergy.com",
     },
     {
       country: "Nigeria",
@@ -50,8 +50,8 @@ export const primaryNav: NavLink[] = [
       { label: "LSECNP", href: "/projects/lsecnp", description: "School-Anchored EV Charging Network" },
     ],
   },
-  { label: "Programme Family", href: "/programme-family" },
-  { label: "Impact", href: "/impact" },
+  // { label: "Programme Family", href: "/programme-family" },
+  // { label: "Impact", href: "/impact" },
   {
     label: "News",
     href: "/news",

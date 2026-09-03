@@ -57,10 +57,10 @@ export function Header() {
         : "/logo/tripp_logo_horizontal_color.png"
     }
     alt="Tripp Energy and Mobility"
-    width={300}
-    height={200}
+    width={155}
+    height={50}
     priority
-    className="h-20 w-auto"
+    className="h-17 w-auto"
           />
           </Link>
 

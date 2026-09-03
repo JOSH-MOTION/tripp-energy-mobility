@@ -59,7 +59,7 @@ export function ProjectTemplate({ project }: { project: Project }) {
         </Container>
       </section>
 
-      {project.specs.length > 0 && (
+      {/* {project.specs.length > 0 && (
         <section className="bg-surface py-20">
           <Container className="max-w-3xl">
             <Reveal>
@@ -78,9 +78,9 @@ export function ProjectTemplate({ project }: { project: Project }) {
             </div>
           </Container>
         </section>
-      )}
+      )} */}
 
-      {project.table && (
+      {/* {project.table && (
         <section className="bg-surface py-20">
           <Container className="max-w-4xl">
             <Reveal>
@@ -100,9 +100,9 @@ export function ProjectTemplate({ project }: { project: Project }) {
             </div>
           </Container>
         </section>
-      )}
+      )} */}
 
-      {project.extra && (
+      {/* {project.extra && (
         <section className="py-20">
           <Container className="max-w-3xl">
             <Reveal className={`rounded-3xl ${c.tint} p-8`}>
@@ -113,7 +113,7 @@ export function ProjectTemplate({ project }: { project: Project }) {
             </Reveal>
           </Container>
         </section>
-      )}
+      )} */}
 
       <section className="border-t border-navy/10 py-16">
         <Container className="flex flex-col items-center gap-5 text-center">

@@ -33,10 +33,10 @@ export default function AboutPage() {
             <h2 className="text-2xl font-semibold text-navy">Who We Are</h2>
             <p className="mt-4 leading-relaxed text-ink/75">
               Tripp Energy and Mobility is a social enterprise, registered in France and operating across Sub-Saharan Africa and South
-              Asia through the SPARC+CM programme. We are simultaneously a social
-              enterprise and a commercially structured company: our mission is binding,
-              our financial model is self-sustaining, and our impact is independently
-              verified.
+              Asia through the SPARC+CM programme. Tripp Energy and Mobility is a social enterprise that delivers the SPARC+CM 
+              (School Programme Action for Renewable Charging and Circular Mobility) programme: solar power, battery storage, 
+              electric school buses, and public EV charging stations for schools in 
+              emerging markets starting with Sub-Sahara Africa and South Asia.
             </p>
             <p className="mt-4 leading-relaxed text-ink/75">
               Our operational entity, Tripp Energy and Mobility Nigeria

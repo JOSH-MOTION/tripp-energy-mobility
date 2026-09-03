@@ -93,9 +93,9 @@ export const projects: Project[] = [
     fullName: "School-Anchored EV Charging Network",
     target: "All schools, universal",
     color: "lsecnp",
-    headline: "108+ Solar-Powered Public EV Charging Points on Lagos Traffic Corridors.",
+    headline: "Solar-Powered Public EV Charging Points on Major Traffic Corridors.",
     intro:
-      "Project 4 (LSECNP) builds Nigeria's first solar-powered, school-anchored, corridor-distributed public EV charging network, accessible via mobile app or USSD to unbanked users, powered entirely by Layer 3 solar surplus.",
+      "Project 4 (LSECNP) builds solar-powered, school-anchored, corridor-distributed public EV charging network, accessible via mobile app or USSD to unbanked users, powered entirely by Layer 3 solar surplus.",
     bullets: [
       "Nigeria's first solar-powered, school-anchored, corridor-distributed charging network",
       "Accessible via mobile app or USSD (*123#) to unbanked users",
