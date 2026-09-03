@@ -8,6 +8,7 @@ import { List, X, CaretDown } from "@phosphor-icons/react/dist/ssr";
 import { clsx } from "clsx";
 import { Container } from "../ui/Container";
 import { primaryNav } from "@/lib/site";
+import Image from "next/image";
 
 export function Header() {
   const pathname = usePathname();
@@ -46,16 +47,21 @@ export function Header() {
       )}
     >
       <Container>
-        <div className="flex h-[72px] items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 shrink-0">
-            <span
-              className={clsx(
-                "text-lg font-bold tracking-tight transition-colors",
-                transparent ? "text-white" : "text-navy"
-              )}
-            >
-              Tripp <span className={transparent ? "text-white/80" : "text-teal"}>Energy</span>
-            </span>
+        <div className="flex h-[75px] items-center justify-between">
+          
+          <Link href="/" className="gap-2 shrink-0">
+          <Image
+             src={
+      transparent
+        ? "/logo/tripp_logo_horizontal_white.png"
+        : "/logo/tripp_logo_horizontal_color.png"
+    }
+    alt="Tripp Energy and Mobility"
+    width={300}
+    height={200}
+    priority
+    className="h-20 w-auto"
+          />
           </Link>
 
           <nav className="hidden items-center gap-1 lg:flex">

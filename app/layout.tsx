@@ -53,7 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
 
   return (
     <html lang="en" className={`${inter.variable} h-full antialiased`}>
-      <body className="flex min-h-full flex-col bg-white text-ink">
+      <body suppressHydrationWarning className="flex min-h-full flex-col bg-white text-ink">
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

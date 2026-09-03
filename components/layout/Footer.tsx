@@ -3,6 +3,7 @@ import { EnvelopeSimple, MapPin } from "@phosphor-icons/react/dist/ssr";
 import { Container } from "../ui/Container";
 import { NewsletterForm } from "./NewsletterForm";
 import { site, footerNav } from "@/lib/site";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -10,9 +11,13 @@ export function Footer() {
       <Container className="py-16">
         <div className="grid grid-cols-1 gap-12 lg:grid-cols-[1.3fr_1fr_1fr_1fr]">
           <div>
-            <span className="text-lg font-bold tracking-tight">
-              Tripp <span className="text-teal-400">Energy</span>
-            </span>
+             <Image
+                src="/logo/tripp_logo_horizontal_white.svg"
+                alt="Tripp Energy and Mobility"
+                width={180}
+                height={70}
+                priority
+              />
             <p className="mt-4 max-w-xs text-sm leading-relaxed text-white/60">
               A {site.legalForm} transforming schools across Sub-Saharan Africa and South
               Asia into solar-powered community energy and mobility hubs.
@@ -55,7 +60,7 @@ export function Footer() {
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
             <div>
               <h3 className="text-xs font-semibold uppercase tracking-[0.12em] text-white/40">
-                Contact by enquiry type
+                Contact us
               </h3>
               <div className="mt-4 grid grid-cols-1 gap-2 sm:grid-cols-2">
                 {site.contactEmails.map((c) => (
