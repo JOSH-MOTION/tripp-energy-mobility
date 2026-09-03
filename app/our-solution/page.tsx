@@ -49,7 +49,7 @@ export default function SolutionPage() {
     <>
       <PageHero
         title="The Solar-Retrofit Nexus: A New Model for School Energy and Mobility."
-        intro="SPARC+CM integrates three things no programme has ever combined at a school site: solar primary electricity, solar-charged electric school buses, and solar-powered public EV charging, in a single installation."
+        // intro="SPARC+CM integrates three things no programme has ever combined at a school site: solar primary electricity, solar-charged electric school buses, and solar-powered public EV charging, in a single installation."
       />
 
       <section className="py-24">
@@ -58,6 +58,8 @@ export default function SolutionPage() {
             <h2 className="text-2xl font-semibold text-navy">
               The Three-Layer Energy System
             </h2>
+            <p className="mt-3 text-ink/70">SPARC+CM integrates three things no programme has ever combined at a school site: solar primary electricity, 
+            solar-charged electric school buses, and solar-powered public EV charging, in a single installation</p>
             <p className="mt-3 text-ink/70">
               A single smart energy management system (SEMS) governs a strict priority
               sequence, every hour of every day.

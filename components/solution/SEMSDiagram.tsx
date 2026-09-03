@@ -37,19 +37,19 @@ export function SEMSDiagram() {
 
   return (
     <div>
-      <div className="flex items-center justify-center gap-3 pb-10 text-navy/60 sm:gap-5">
-        <div className="flex flex-col items-center gap-1.5">
-          <SunHorizon weight="fill" className="size-7 text-gold" />
-          <span className="text-[11px] font-medium">Solar Array</span>
-        </div>
-        <CaretRight weight="bold" className="size-4 shrink-0" />
-        <div className="flex flex-col items-center gap-1.5">
-          <BatteryCharging weight="fill" className="size-7 text-teal" />
-          <span className="text-[11px] font-medium">Inverter + Storage</span>
-        </div>
-        <CaretRight weight="bold" className="size-4 shrink-0" />
-        <span className="text-[11px] font-medium text-navy/40">SEMS priority sequence ↓</span>
-      </div>
+    {/* //   <div className="flex items-center justify-center gap-3 pb-10 text-navy/60 sm:gap-5">
+    //     <div className="flex flex-col items-center gap-1.5">
+    //       <SunHorizon weight="fill" className="size-7 text-gold" />
+    //       <span className="text-[11px] font-medium">Solar Array</span>
+    //     </div>
+    //     <CaretRight weight="bold" className="size-4 shrink-0" />
+    //     <div className="flex flex-col items-center gap-1.5">
+    //       <BatteryCharging weight="fill" className="size-7 text-teal" />
+    //       <span className="text-[11px] font-medium">Inverter + Storage</span>
+    //     </div>
+    //     <CaretRight weight="bold" className="size-4 shrink-0" />
+    //     <span className="text-[11px] font-medium text-navy/40">SEMS priority sequence ↓</span>
+    //   </div> */}
 
       <div className="grid grid-cols-1 gap-3">
         {layers.map((layer) => {

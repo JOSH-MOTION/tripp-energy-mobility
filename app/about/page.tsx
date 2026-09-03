@@ -38,12 +38,12 @@ export default function AboutPage() {
               electric school buses, and public EV charging stations for schools in 
               emerging markets starting with Sub-Sahara Africa and South Asia.
             </p>
-            <p className="mt-4 leading-relaxed text-ink/75">
+            {/* <p className="mt-4 leading-relaxed text-ink/75">
               Our operational entity, Tripp Energy and Mobility Nigeria
               Limited, is registered under the Companies and Allied Matters Act (CAMA)
               2020 and serves as the primary implementation vehicle for the LASMOCEP /
               SPARC+CM programme in Nigeria.
-            </p>
+            </p> */}
           </Reveal>
         </Container>
       </section>
@@ -63,7 +63,7 @@ export default function AboutPage() {
           </Reveal>
         </Container>
       </section>
-
+{/* 
       <section className="py-24">
         <Container className="max-w-3xl">
           <Reveal>
@@ -96,8 +96,8 @@ export default function AboutPage() {
             ))}
           </div>
         </Container>
-      </section>
-
+      </section> */}
+{/* 
       <section className="bg-surface py-24">
         <Container>
           <div className="grid grid-cols-1 gap-10 lg:grid-cols-[0.9fr_1.4fr] lg:items-center">
@@ -140,9 +140,9 @@ export default function AboutPage() {
             </Reveal>
           </div>
         </Container>
-      </section>
+      </section> */}
 
-      <section className="py-24">
+      <section className="bg-surface py-24">
         <Container>
           <Reveal>
             <h2 className="text-2xl font-semibold text-navy">Our Academic Anchors</h2>
@@ -159,7 +159,7 @@ export default function AboutPage() {
                 and findings as open-source resources.
               </p>
             </Reveal>
-            <Reveal delay={0.1} className="rounded-3xl border border-navy/10 bg-white p-8">
+            {/* <Reveal delay={0.1} className="rounded-3xl border border-navy/10 bg-white p-8">
               <GraduationCap weight="fill" className="size-9 text-teal" />
               <h3 className="mt-4 text-lg font-semibold text-navy">
                 Pan-Atlantic University / Lagos Business School
@@ -169,7 +169,7 @@ export default function AboutPage() {
                 Executive Education, serves as SPARC+CM&apos;s Nigerian academic
                 co-partner.
               </p>
-            </Reveal>
+            </Reveal> */}
           </div>
         </Container>
       </section>

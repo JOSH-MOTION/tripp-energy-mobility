@@ -29,7 +29,7 @@ export default function ProblemPage() {
     <>
       <PageHero
         title="The Problem Is Not a Lack of Sunlight. It Is a Lack of Infrastructure Built to Use It."
-        intro="The market failure that SPARC+CM was built to solve, and why it matters to DFI funders and school operators alike."
+        // intro="The market failure that SPARC+CM was built to solve, and why it matters to DFI funders and school operators alike."
       />
 
       <section className="py-24">
@@ -46,7 +46,7 @@ export default function ProblemPage() {
               deficits in the world are in Sub-Saharan Africa. But the energy crisis in
               African schools is not primarily a rural electrification problem, it is
               an urban reliability problem. Schools in Lagos, Karachi, and Kinshasa are
-              grid-connected. But the grid delivers power for 2 to 6 hours per day. The
+              grid-connected. But the grid delivers irregular or unreliable power for. The
               rest of the time, schools run on petrol and diesel generators.
             </p>
           </Reveal>
